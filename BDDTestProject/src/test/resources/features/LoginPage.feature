@@ -14,3 +14,9 @@ Feature: LoginPage
     And   User enter "rock@19.ua" in Email Adress field
     And   User click on Forgot Password Link
     Then  User received message password reset instructions sent to your email address
+
+  Scenario: Authorization with invalid credentials
+    And User enter "Sasha_Test" in Email Adress field
+    And   User enter "1234567" in Password field
+    Then  User click on Login Button
+    And  Your username or password was incorrect alert is displayed
