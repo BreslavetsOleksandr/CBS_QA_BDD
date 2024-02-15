@@ -6,4 +6,4 @@ Feature: LoginPage
 
     Scenario: My first test
       Given User go to login page
-      When User enter "dosfps" Forgot Password Email
+      When User enter "dosfpsde" Forgot Password Email
